@@ -1,0 +1,26 @@
+# 빌드 결과물 — 멀티스테이지 빌드 시 컨테이너 내부에서 생성하므로 불필요
+target/
+build/
+
+# Git 관련
+.git/
+.gitignore
+
+# IDE 설정
+.idea/
+*.iml
+.vscode/
+
+# 환경 파일 — 이미지에 포함되면 보안 위험
+.env
+*.env.local
+application-prod.yml
+application-secret.yml
+
+# 로그 / 임시 파일
+*.log
+tmp/
+
+# Docker 관련 (빌드 컨텍스트 자체)
+Dockerfile*
+docker-compose*.yml
